@@ -1,0 +1,30 @@
+<md-dialog id="login-dialog" flex layout="vertical" layout-fill layout-align="center" aria-label="login dialog">
+    <md-content layout="horizontal" layout-padding layout-align="start center">
+
+        <div flex flex-sm="80" flex-md="60" offset-sm="10" offset-md="20" class="md-whiteframe-z1">
+            <md-toolbar class="md-light-blue-dark-theme">
+
+                <div class="md-toolbar-tools">
+                    <span>Login</span>
+
+                    <!-- fill up the space between left and right area -->
+                    <span flex></span>
+
+                    <md-button aria-label="go" class="md-button md-indigo-theme" ng-click="login()">Go!</md-button>
+                </div>
+
+            </md-toolbar>
+
+            <md-content md-theme="light-blue-dark" class="md-light-blue-dark-theme" layout="vertical">
+                <form>
+                    <div layout="vertical" layout-sm="horizontal" layout-align="space-around">
+                        <!-- Dirty fixing style issue -->
+                        <md-text-float style="margin: 10px 0 8px;" label="eMail" ng-model="user.email" class="md-light-blue-dark-theme"></md-text-float>
+                        <md-text-float label="Password" ng-model="user.password" class="md-light-blue-dark-theme"></md-text-float>
+                    </div>
+                </form>
+            </md-content>
+        </div>
+
+    </md-content>
+</md-dialog>

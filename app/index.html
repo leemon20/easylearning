@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ebusiness" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EBusiness</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="dist/all.min.css">
+</head>
+
+<body layout="horizontal">
+
+    <div layout="vertical" layout-fill ng-controller="BasicController">
+        <md-toolbar class="md-indigo-theme">
+
+            <div class="md-toolbar-tools">
+                <span>eStack</span>
+
+                <!-- fill up the space between left and right area -->
+                <span flex></span>
+
+            </div>
+
+        </md-toolbar>
+
+        <md-content flex layout-fill layout="vertical">
+            <div ui-view flex layout-fill layout="vertical"></div>
+        </md-content>
+    </div>
+
+    <script src="dist/all.min.js"></script>
+
+</body>
+
+</html>

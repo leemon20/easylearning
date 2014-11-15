@@ -1,0 +1,7 @@
+md-dialog#login-dialog {
+  background-color: rgba(255, 255, 255, 0);
+  max-width: 100%;
+}
+md-dialog#login-dialog > md-content {
+  background-color: rgba(255, 255, 255, 0);
+}
